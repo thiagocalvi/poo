@@ -9,7 +9,9 @@ import java.util.Scanner;
  * @author thiago
  */
 
-import EquacaoSegundoGrau.EquacaoSegundoGrau;
+//import EquacaoSegundoGrau.EquacaoSegundoGrau;
+//import NumerosPares.NumerosPares;
+import Menu.Menu;
 public class Exercicios {
 
     /**
@@ -18,10 +20,16 @@ public class Exercicios {
     public static void main(String[] args) {
         // TODO code application logic here
        
-        EquacaoSegundoGrau eq = new EquacaoSegundoGrau(2.0,3.0,1.0);
-        eq.delta();
-        eq.raizes();
+        //EquacaoSegundoGrau eq = new EquacaoSegundoGrau(2.0,3.0,1.0);
+        //eq.delta();
+        //eq.raizes();
         
+        //NumerosPares numPar = new NumerosPares();
+        //numPar.pares();
+        
+        Menu pmenu = new Menu();
+        
+        pmenu.menu();
     }
     
 }
