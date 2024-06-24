@@ -12,7 +12,7 @@ public class Pessoa {
     private String nome;
     private String corDoCabelo;
     private int idade;
-    private Carro carro;
+    private Carro carro ;
     
     public Pessoa(){
         
