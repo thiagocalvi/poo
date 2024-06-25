@@ -24,6 +24,7 @@ public class Livro {
         this.editora = editora;
         this.edicao = edicao;
         this.numeroDePaginas = numeroDePaginas;
+        this.emprestimo = false;
     }
 
     
@@ -74,5 +75,13 @@ public class Livro {
     
     public void setEmprestimo(boolean emprestimo){
         this.emprestimo = emprestimo;
+    }
+    
+    public void abrir(){
+        System.out.println("Livro aberto para leitura");
+    }
+    
+    public void fechar(){
+        System.out.println("Livro fechado para leitura");
     }
 }

@@ -53,4 +53,8 @@ public class Usuario {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+    
+    public void lerLivro(){
+        System.out.println("Lendo livro");
+    }
 }

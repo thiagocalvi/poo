@@ -14,6 +14,39 @@ public class Emprestimo {
     private Livro livro;
     private Usuario usuario;
 
+    public String getDataEmprestimo() {
+        return dataEmprestimo;
+    }
+
+    public void setDataEmprestimo(String dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+    public String getHoraEmprestimo() {
+        return horaEmprestimo;
+    }
+
+    public void setHoraEmprestimo(String horaEmprestimo) {
+        this.horaEmprestimo = horaEmprestimo;
+    }
+
+    public Livro getLivro() {
+        return livro;
+    }
+
+    public void setLivro(Livro livro) {
+        this.livro = livro;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    
     public Emprestimo(String dataEmprestimo, String horaEmprestimo, Livro livro, Usuario usuario) {
         this.dataEmprestimo = dataEmprestimo;
         this.horaEmprestimo = horaEmprestimo;
@@ -24,17 +57,23 @@ public class Emprestimo {
     
     
     public void realizarEmprestimo(){
-        if (this.livro.getEmprestimo()){
-            System.out.println("Livro já emprestado");
-        }
-        else{
-            this.livro.setEmprestimo(true);
-        }
+        this.livro.setEmprestimo(true);
+        System.out.println("Livro emprestado");
         
     }
     
+    public void devolverLivro(){
+        this.livro.setEmprestimo(false);
+        System.out.println("Livro devolvido");
+
+    }
+    
     public void imprimirEmprestimo(){
-        
+        System.out.println("Data: " + this.dataEmprestimo);
+        System.out.println("Livro: " + this.livro.getTitulo());
+        System.out.println("Usuario: " + this.usuario.getNome());
+
+
     }
     
 }

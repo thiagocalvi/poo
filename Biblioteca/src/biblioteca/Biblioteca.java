@@ -21,6 +21,11 @@ public class Biblioteca {
         Emprestimo emprestimo = new Emprestimo("10/05/2023", "10:35:45", livro1, usuario);
         
         emprestimo.realizarEmprestimo();
+        emprestimo.imprimirEmprestimo();
+        emprestimo.getLivro().abrir();
+        emprestimo.getUsuario().lerLivro();
+        emprestimo.getLivro().fechar();
+        emprestimo.devolverLivro();
     }
     
 }
