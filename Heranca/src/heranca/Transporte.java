@@ -8,10 +8,14 @@ package heranca;
  *
  * @author thiago
  */
-public class transporte {
-    private int capacidade;
+public class Transporte {
+    protected int capacidade;
     
-    public transporte(int capacidade){
+    public Transporte(){
+        
+    }
+    
+    public Transporte(int capacidade){
         this.capacidade = capacidade;
     }
         

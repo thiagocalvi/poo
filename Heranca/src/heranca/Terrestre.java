@@ -8,11 +8,15 @@ package heranca;
  *
  * @author thiago
  */
-public class terrestre extends transporte{
+public class Terrestre extends Transporte{
    
-    private int numRodas;
+    protected int numRodas;
+    
+    public Terrestre(){
+        
+    }
 
-    public terrestre(int capacidade, int numRodas){
+    public Terrestre(int capacidade, int numRodas){
         super(capacidade);
         this.numRodas = numRodas;
     }
